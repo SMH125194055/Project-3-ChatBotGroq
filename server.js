@@ -25,7 +25,7 @@ const groq = new Groq({
   apiKey: API_KEY,
 });
 
-app.post('/api/groq', async (req, res) => {
+app.post('/api.openai.com/v1', async (req, res) => {
   const { messages, model } = req.body;
 
   // Validate input
