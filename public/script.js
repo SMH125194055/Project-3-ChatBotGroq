@@ -53,7 +53,7 @@ function removeLoadingIndicator() {
 
 async function getBotResponse(userInput) {
   try {
-    const response = await fetch('/api.openai.com/v1', {
+    const response = await fetch('/api/groq', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
