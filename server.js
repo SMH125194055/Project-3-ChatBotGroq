@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static('public'));
 
-const API_KEY = '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';
+const API_KEY = process.env.GROQ_API_KEY; // Use environment variable for security
 
 // Apply rate limiting to all requests
 const limiter = rateLimit({
