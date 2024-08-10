@@ -4,12 +4,16 @@
       {
         "src": "server.js",
         "use": "@vercel/node"
+      },
+      {
+        "src": "pages/api/groq.js",
+        "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/api/groq",
-        "dest": "/server.js"
+        "dest": "/pages/api/groq.js"
       }
     ]
   }
